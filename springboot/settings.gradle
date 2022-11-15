@@ -1,0 +1,5 @@
+include ':microservicios:product-service'
+include ':microservicios:review-service'
+include ':microservicios:recommendation-service'
+include ':microservicios:product-composite-service'
+include ':spring-cloud:eureka-server'
