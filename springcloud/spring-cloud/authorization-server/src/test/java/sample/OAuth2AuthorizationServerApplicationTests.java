@@ -31,7 +31,7 @@ import org.springframework.test.web.servlet.MockMvc;
  *
  * @author Josh Cummings
  */
-@SpringBootTest(properties = {"eureka.client.enabled=false", "spring.cloud.config.enabled=false"})
+@SpringBootTest(properties = {"spring.cloud.config.enabled=false"})
 @AutoConfigureMockMvc
 class OAuth2AuthorizationServerApplicationTests {
 
