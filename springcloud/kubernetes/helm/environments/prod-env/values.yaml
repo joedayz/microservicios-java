@@ -1,0 +1,14 @@
+secrets:
+
+  config-server-secrets:
+    ENCRYPT_KEY: my-very-secure-encrypt-key
+    SPRING_SECURITY_USER_NAME: prod-usr
+    SPRING_SECURITY_USER_PASSWORD: prod-pwd
+
+  config-client-credentials:
+    CONFIG_SERVER_USR: prod-usr
+    CONFIG_SERVER_PWD: prod-pwd
+
+config-server:
+  envFromSecretRefs:
+    - config-server-secrets

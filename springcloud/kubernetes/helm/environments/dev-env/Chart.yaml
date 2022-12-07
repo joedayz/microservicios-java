@@ -1,0 +1,15 @@
+apiVersion: v2
+appVersion: "1.0"
+description: A Helm chart for MICROSERVICES WITH SPRING BOOT AND SPRING CLOUD running in a Dev and Test Env
+name: dev-env
+version: 1.0.0
+
+dependencies:
+
+  - name: common
+    version: 1.0.0
+    repository: file://../../common
+
+  - name: config-server
+    version: 1.0.0
+    repository: file://../../components/config-server
