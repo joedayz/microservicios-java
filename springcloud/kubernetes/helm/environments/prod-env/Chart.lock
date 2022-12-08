@@ -1,9 +1,0 @@
-dependencies:
-- name: common
-  repository: file://../../common
-  version: 1.0.0
-- name: config-server
-  repository: file://../../components/config-server
-  version: 1.0.0
-digest: sha256:2b81b150cf5f95e9ba2b3deaedc3b847205d821a16049641eaf04a099d8709e6
-generated: "2022-12-07T17:20:06.787079-05:00"
