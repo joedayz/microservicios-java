@@ -95,7 +95,7 @@ public class AuthorizationServerConfig {
 
   @Bean
   public ProviderSettings providerSettings() {
-    return new ProviderSettings().issuer("http://auth-server:9999");
+    return new ProviderSettings().issuer("http://auth-server");
   }
 }
 //CHECKSTYLE:ON

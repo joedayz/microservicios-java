@@ -98,7 +98,6 @@ services:
       retries: 60
 
   gateway:
-
     build: spring-cloud/gateway
     image: hands-on/gateway
     mem_limit: 512m
