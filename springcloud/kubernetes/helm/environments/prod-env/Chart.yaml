@@ -13,6 +13,7 @@ dependencies:
   - name: config-server
     version: 1.0.0
     repository: file://../../components/config-server
+
   - name: gateway
     version: 1.0.0
     repository: file://../../components/gateway
