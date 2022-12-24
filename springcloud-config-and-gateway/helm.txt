@@ -1,0 +1,20 @@
+Comandos de Helm
+================
+create: used to create new charts.
+dependency update (dep up for short): resolves dependencies on other charts. Charts are placed in the charts folder and the file Chart.lock is updated.
+dependency build: rebuilds the dependencies based on the content in the file Chart.lock.
+template: renders the definitions files created by the templates.
+install: installs a chart. This command can override the values supplied by a chart, either using the --set flag to override a single value or using the --values flag to supply its own yaml file with values.
+install --dry-run: simulates a deployment without performing it; useful for verifying a deployment before executing it.
+list: lists installations in the current Namespace.
+upgrade: updates an existing installation.
+uninstall: removes an installation.
+
+Contenido de un Helm chart
+==========================
+Chart.yaml, which contains general information about the chart and a list of other charts it might depend on.
+templates, a folder that contains the templates that will be used to deploy the chart.
+values.yaml, which contains default values for the variables used by the templates.
+Chart.lock, a file created by Helm when resolving the dependencies described in the Chart.yaml file. This information describes in more detail what dependencies are actually used. It is used by Helm to track the entire dependency tree, making it possible to recreate the dependency tree exactly as it looked the last time the chart worked.
+charts, a folder that will contain the charts this chart depends on after Helm has resolved the dependencies.
+.helmignore, an ignore file similar to .gitignore. It can be used to list files that should be excluded when building the chart.
